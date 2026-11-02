@@ -1,0 +1,13 @@
+# Elastic Beanstalk ignore file
+# Uses .gitignore syntax. When this file exists, the EB CLI uses it
+# instead of .gitignore to decide what goes into the upload bundle.
+
+# Ignore everything by default...
+*
+
+# ...then allow only what the Docker build needs
+!Dockerfile
+!pyproject.toml
+!uv.lock
+!predict.py
+!model_c=0.01.bin
